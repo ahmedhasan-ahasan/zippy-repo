@@ -1,0 +1,24 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zippyusermgmtdb
+    username: root
+    password: root
+  jpa:
+    generate-ddl: false
+    show-sql: true
+springdoc:
+  api-docs:
+    enabled: true
+    path: /apidoc
+  swagger-ui:
+    path: /swaggerui.html 
+usermgmtservice:
+  api:
+    security:
+      username: zippyuser
+      password: "$2a$10$ao9M1pLRtM06lPpRzU1SuOoVeESDiCOD/npBkFyesZN8i2P7t.F.y"
+      #password: welcome1
+      csrf: false
