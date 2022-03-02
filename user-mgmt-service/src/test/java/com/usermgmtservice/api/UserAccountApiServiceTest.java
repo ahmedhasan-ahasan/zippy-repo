@@ -16,6 +16,11 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import com.usermgmtservice.exceptions.OtpAlreadyVerifiedException;
+import com.usermgmtservice.exceptions.OtpMismatchException;
+import com.usermgmtservice.exceptions.UnknownVerificationTypeException;
+import com.usermgmtservice.exceptions.UserAccountAlreadyActivatedException;
+import com.usermgmtservice.exceptions.UserAccountNotFoundException;
 import com.usermgmtservice.service.ManageUserAccountService;
 
 /**
@@ -59,11 +64,31 @@ class UserAccountApiServiceTest {
 	}
 	
 	void getUserAccountByUserAccountIdTest() {
-		
+		//TODO write the test method
 	}
 	
-	void getUserAccountTestByEmailAddress() {
-		
+	void getUserAccountTestByEmailAddressTest() {
+		//TODO write the test method
+	}
+	
+	void registerCustomerTest() {
+		//TODO write the test method
+	}
+	
+	void getUserAccountByEmailAddress() {
+		//TODO write the test method
+	}
+	
+	void getUserAccountByEmailAddressTest(){
+		//TODO write the test method
+	}
+	
+	void verifyOtpAndUpdateAccountStatus() {
+		/**
+		 * TODO write the test method, here we have to take the considerations of all exceptions :
+		 *  UserAccountNotFoundException, OtpMismatchException, UserAccountAlreadyActivatedException,
+			OtpAlreadyVerifiedException, UnknownVerificationTypeException
+		 */
 	}
 	
 }
